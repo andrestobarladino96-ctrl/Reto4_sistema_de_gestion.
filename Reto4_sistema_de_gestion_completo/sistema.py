@@ -21,7 +21,6 @@ import datetime
 # Import math to verify that numeric values are finite.
 import math
 
-
 # =====================================================================
 # LOGGING SYSTEM CONFIGURATION (ERROR AND EVENT AUDIT)
 # =====================================================================
@@ -34,7 +33,6 @@ logging.basicConfig(
     encoding="utf-8"
 )
 
-
 # =====================================================================
 # CUSTOM EXCEPTIONS AND CHAINING
 # =====================================================================
@@ -44,24 +42,20 @@ class SoftwareFJError(Exception):
     """Base class for custom exceptions in the Software FJ system."""
     pass
 
-
 # Exception for incorrect personal data.
 class InvalidCustomerError(SoftwareFJError):
     """Raised when customer data does not pass validations."""
     pass
-
 
 # Exception for unavailable services or parameters.
 class ServiceNotAvailableError(SoftwareFJError):
     """Raised when a service or its parameters are incorrect."""
     pass
 
-
 # Exception for errors during reservation processing.
 class ReservationError(SoftwareFJError):
     """Raised upon failures in reservation creation or processing."""
     pass
-
 
 # =====================================================================
 # AUXILIARY VALIDATION FUNCTIONS
@@ -73,7 +67,6 @@ def validate_text(value, field, min_length=1):
         raise ValueError(f"The field {field} must contain at least "
                          f"{min_length} character(s).")
     return value.strip()
-
 
 def validate_positive_number(value, field, allow_zero=False):
     """Verifies that a value is numeric, finite, and positive."""
@@ -90,7 +83,6 @@ def validate_positive_number(value, field, allow_zero=False):
         raise ValueError(f"The field {field} must be greater than zero.")
 
     return value
-
 
 # =====================================================================
 # ABSTRACT BASE CLASS (GENERAL ENTITY)
@@ -118,7 +110,6 @@ class BaseEntity(ABC):
     def detail_entity(self) -> str:
         """Forces derived classes to implement the entity detail."""
         pass
-
 
 # =====================================================================
 # CUSTOMER CLASS WITH ENCAPSULATION AND STRICT VALIDATIONS
@@ -207,7 +198,6 @@ class Customer(BaseEntity):
             f"ID Number: {self._national_id}, Email: {self._email}]"
         )
 
-
 # =====================================================================
 # ABSTRACT SERVICE CLASS AND SPECIALIZED SERVICES (POLYMORPHISM)
 # =====================================================================
@@ -265,7 +255,6 @@ class Service(BaseEntity, ABC):
             f"Service: {self.service_name} "
             f"(Base: ${self._base_cost:,.2f})"
         )
-
 
 # =====================================================================
 # 1. SPECIALIZED SERVICE: ROOM RESERVATION
@@ -336,7 +325,6 @@ class RoomReservation(Service):
             f"(Capacity: {self.person_capacity} people)."
         )
 
-
 # =====================================================================
 # 2. SPECIALIZED SERVICE: EQUIPMENT RENTAL
 # =====================================================================
@@ -387,7 +375,6 @@ class EquipmentRental(Service):
             f"Equipment Rental '{self.service_name}' "
             f"- Serial: {self.equipment_serial}."
         )
-
 
 # =====================================================================
 # 3. SPECIALIZED SERVICE: SPECIALIZED CONSULTING
@@ -447,7 +434,6 @@ class SpecializedConsulting(Service):
             f"Specialized Consulting in '{self.specialty}' "
             f"- Service: {self.service_name}."
         )
-
 
 # =====================================================================
 # RESERVATION CLASS (INTEGRATION AND ROBUST EXCEPTION HANDLING)
@@ -591,7 +577,6 @@ class Reservation:
             logging.error("It was not possible to cancel the reservation: %s", error)
             print(f"[CANCELLATION ERROR] {error}")
             raise
-
 
 # =====================================================================
 # SIMULATION OF MORE THAN 10 COMPLETE OPERATIONS (UNAD REQUIREMENT)
@@ -815,7 +800,6 @@ def execute_system_simulation():
     print(f"Total reservations managed: {len(reservation_list)}")
     print("Simulation successfully completed. Check 'system_management.log'.")
     print("=================================================================\n")
-
 
 if __name__ == "__main__":
     execute_system_simulation()
