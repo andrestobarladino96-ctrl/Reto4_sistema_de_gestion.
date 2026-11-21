@@ -10,7 +10,7 @@ El desarrollo permite aplicar conceptos fundamentales de programación, como cla
 
 Este proyecto se desarrolla en el contexto del curso de Programación de la Universidad Nacional Abierta y a Distancia (UNAD), como ejercicio práctico de aplicación de los conocimientos adquiridos durante el proceso de formación académica.
 
-2. Objetivo del proyecto
+**2. OBJETIVO DEL PROYECTO**
 
 Desarrollar un sistema de gestión utilizando el lenguaje de programación Python, aplicando los principios de la programación orientada a objetos para organizar la información de clientes, administrar diferentes tipos de servicios, procesar reservas y controlar posibles errores durante la ejecución.
 
