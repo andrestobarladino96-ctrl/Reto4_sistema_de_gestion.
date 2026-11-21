@@ -219,7 +219,7 @@ El archivo de log sí permite conservar un historial de los eventos y errores ge
 
 **Código del curso:** 213023.
 
-**grupo:** 599.
+**Grupo:** 599.
 
 ## 12. Conclusión
 
