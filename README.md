@@ -2,7 +2,7 @@ Sistema Integral de Gestión de Clientes.
 
 **1. DESCRIPCION DEL PROYECTO**
 
-Software FJ es un proyecto desarrollado en Python para gestionar clientes, servicios y reservas mediante una aplicación basada en programación orientada a objetos.
+SISTEMA INTEGRAL DE GESTIÓN DE CLIENTES es un proyecto desarrollado en Python para gestionar clientes, servicios y reservas mediante una aplicación basada en programación orientada a objetos.
 
 El propósito principal del sistema es representar un proceso de gestión empresarial en el que se puedan registrar clientes, definir diferentes tipos de servicios, calcular sus respectivos costos y administrar las reservas realizadas.
 
