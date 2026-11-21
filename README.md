@@ -145,3 +145,84 @@ Biblioteca Math: validación de valores numéricos.
 Las bibliotecas utilizadas pertenecen a la biblioteca estándar de Python, por lo que no se requieren instalaciones adicionales de paquetes externos para ejecutar el programa.
 
 Las bibliotecas utilizadas pertenecen a la biblioteca estándar de Python, por lo que no se requieren instalaciones adicionales de paquetes externos para ejecutar el programa.
+
+## 6. Requisitos para ejecutar el proyecto
+
+Para ejecutar correctamente el programa se necesita:
+
+- Tener Python instalado en el equipo.
+- Contar con un editor de código, como Visual Studio Code.
+- Descargar o copiar el repositorio de GitHub.
+
+## 7. Instrucciones de ejecución
+
+**Paso 1.** Descargar el proyecto desde el repositorio de GitHub.
+
+**Paso 2.** Abrir la carpeta del proyecto en Visual Studio Code.
+
+**Paso 3.** Abrir una terminal y ubicarse en la carpeta donde se encuentra el archivo Python.
+
+**Paso 4.** Ejecutar el siguiente comando:
+
+python sistema.py luego oprimir enter 
+
+Si se conserva el nombre original del archivo, se debe utilizar:
+
+python "sistema.py"
+
+**Paso 5.** Una vez ejecutado, el programa realizará automáticamente una simulación de diferentes operaciones relacionadas con el registro de clientes, creación de servicios, procesamiento y cancelación de reservas.
+
+Al finalizar, se mostrará un resumen de las operaciones realizadas y se generará el archivo `system_management.log` con los registros correspondientes.
+
+## 8. Pruebas y simulación del sistema
+
+El programa incorpora una simulación de 11 operaciones para comprobar el comportamiento de sus funcionalidades.
+
+Durante esta simulación se realizan registros válidos e inválidos de clientes, creación de servicios, validaciones, procesamiento de reservas, cálculos de costos y cancelaciones.
+
+Estas pruebas permiten observar cómo responde el sistema ante diferentes situaciones y cómo se controlan los errores durante su ejecución.
+
+## 9. Estructura general del proyecto
+
+La organización lógica del programa comprende los siguientes componentes:
+
+- Configuración del sistema de registro de eventos.
+- Definición de excepciones personalizadas.
+- Funciones auxiliares de validación.
+- Clase base abstracta para las entidades.
+- Clase de gestión de clientes.
+- Clase abstracta para los servicios.
+- Clases especializadas para cada modalidad de servicio.
+- Clase encargada de administrar las reservas.
+- Función principal para ejecutar la simulación.
+
+## 10. Alcance del proyecto
+
+Sistema de gestion de clientes representa un ejercicio académico para demostrar la aplicación de los principios de programación orientada a objetos en un escenario de gestión empresarial.
+
+La información de clientes, servicios y reservas se administra en memoria durante la ejecución del programa. No se implementa una conexión con bases de datos ni un sistema de almacenamiento permanente de estos registros.
+
+El archivo de log sí permite conservar un historial de los eventos y errores generados.
+
+## 11. Autores
+
+**Desarrolladores:**
+
+- Andrés Ovidio Tobar Ladino.
+- Livan Jussete Vargas Perdomo.
+
+**Institución:** Universidad Nacional Abierta y a Distancia (UNAD).
+
+**Programa académico:** Ingeniería de Sistemas.
+
+**Curso:** Programación.
+
+**Código del curso:** 213023.
+
+## 12. Conclusión
+
+El desarrollo de Sistema de gestion de clientes permite integrar diferentes conceptos de programación mediante la construcción de un sistema orientado a la gestión de clientes, servicios y reservas.
+
+A través de este ejercicio se fortalece la comprensión de la programación orientada a objetos, especialmente en el uso de clases abstractas, herencia, encapsulamiento y polimorfismo. Asimismo, se reconoce la importancia de validar la información y controlar las excepciones para mejorar la organización y confiabilidad de las aplicaciones.
+
+Finalmente, el proyecto constituye una experiencia de aprendizaje que permite aplicar los conocimientos adquiridos en el curso de Programación de la UNAD, acercando los fundamentos teóricos a una situación práctica de desarrollo de software.
