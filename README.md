@@ -219,6 +219,8 @@ El archivo de log sí permite conservar un historial de los eventos y errores ge
 
 **Código del curso:** 213023.
 
+**grupo:** 599.
+
 ## 12. Conclusión
 
 El desarrollo de Sistema de gestion de clientes permite integrar diferentes conceptos de programación mediante la construcción de un sistema orientado a la gestión de clientes, servicios y reservas.
