@@ -1,4 +1,4 @@
-Sistema Integral de Gestión de Clientes.
+**SISTEMA INTEGRAL DE GESTION DE CLIENTES.**
 
 **1. DESCRIPCION DEL PROYECTO**
 
